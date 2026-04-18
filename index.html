@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body{
+        background: white;
+        font-family:Arial ;
+        margin: 0;
+      }
+      .hero{
+        background: #E9E7E8;
+        text-align: center;
+        padding: 30px;
+        color: #473133;
+        
+      }
+      .heroi{
+        background: #E9E7E8;
+        text-align: center;
+        padding: 30px;
+        color: #473133;
+      }
+      .secii{
+        text-align: left;
+        
+        background: #F0F1F3;
+      }
+      .secii img{
+        width:300px;
+        margin: 40px 50px;
+        
+      }
+      .shoei{
+        margin: 20px 40px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 4px 8px;
+        border-radius: 10px;
+      }
+      .shoei img{
+        width: 200px;
+      }
+      .shoeii{
+        margin: 20px 50px;
+        padding: 40px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow:0 4px 8px;
+      }
+      .shoeii img{
+        width:250px;
+        margin:-10px;
+      }
+      .shoeiii{
+       margin: 20px 40px;
+        padding: 40px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px;
+      }
+      .shoeiii img{
+        width: 300px;
+        margin: -13px;
+      }
+      .btn {
+      display: block;
+      text-align: center;
+      
+      padding: 10px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #25D366;
+    }
+    .whatsapp, .call {
+      position: fixed;
+      bottom: 80px;
+      padding: 12px;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .whatsapp {
+      right: 30px;
+      background: #25D366;
+    }
+
+    .call {
+    right: 80px;
+    background: #007BFF;
+    }
+    .footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+      color: #888;
+    }
+    #menu-toggle {
+  display: none;
+}
+.whatsappi, .calli {
+      position: fixed;
+      bottom: 20px;
+      
+      padding: 12px;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    .whatsappi {
+      right: 15px;
+      background: #25D366;
+    }
+
+    .calli {
+    right: 60px;
+    background: #007BFF;
+    }
+
+/* Navbar top */
+.navbar {
+  background: transparent;
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* Hamburger icon */
+.menu-icon {
+  font-size: 25px;
+  cursor: pointer;
+  color:black;
+}
+
+/* Side menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: black;
+  color: white;
+  padding-top: 60px;
+  transition: 0.3s;
+}
+
+/* Menu links */
+.menu a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: orange;
+}
+
+/* Show menu when checked */
+#menu-toggle:checked ~ .menu {
+  left: 0;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Pages */
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page:target {
+  display: block;
+}
+
+body:not(:has(:target)) #home {
+  display: block;
+}
+
+    </style>
+    <title>Pranab Paul & Dipa Paul's shoe Enterprise</title>
+    <link rel="icon" type="image/jpg" href="https://i.postimg.cc/ZRPS8L6C/20260415-143734(1)-64x64.jpg">
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle">
+
+<!-- Navbar -->
+<div class="navbar">
+  <label for="menu-toggle" class="menu-icon">☰</label>
+</div>
+
+<!-- Side Menu -->
+<div class="menu">
+  <label for="menu-toggle" class="close">✖</label>
+
+  <a href="#">Home</a>
+  
+  <a href="#shoes">Shoes</a>
+  <a href="#gallery">Gallery</a>
+</div>
+
+<!-- Pages -->
+
+
+<div id="shoes" class="page">
+  <div class="shoei">
+    <h3 style="color:#f0a511;">Our range of Variety Available </h3>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/xTVvFm8z/20260416-175134.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/7LS9LN5S/20260416-175214.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/FH4gBLWL/20260416-175246.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/137XqxNT/20260416-175319.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/SRj3MJXS/20260418-184622.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/289vG311/20260418-184659.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/0N0ytHVm/20260418-184721.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/V6TQ4qPX/20260418-184759.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/1XhPsG71/20260418-184825.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/43jRQvgr/20260418-184843.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/mkRqm86S/20260418-184918.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/C5mvmY8S/20260418-184942.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/wx00Kq1r/20260418-185002.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/HsF0HVdS/20260418-185041.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/6QcG73xw/20260418-185127.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/c6GJkyGb/20260418-185207.jpg">
+    <p style="color:green;">In stock</p>
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/bvwx8Ms0/20260418-185250.jpg">
+    <p style="color:green;">In stock</p>
+    
+    
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/Pxkd1GY1/20260418-185325.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/sDMbf6Zz/20260418-185414.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/XYwHXTNJ/20260418-185432.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/QtPwc1RR/20260418-185449.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/TPsCsGCS/20260418-185501.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/3J3CndYb/20260418-185520.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/4NF7Vddh/20260418-185555.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/yNh8QY14/20260418-185608.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/ZYQ4Ly8N/20260418-185849.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/YS2CPBht/20260418-185859.jpg">
+    <p style="color:green;">In stock</p>
+    <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+  </div>
+  <hr>
+  <div class="section">
+  <h2>Our Location</h2>
+
+  <iframe 
+    src="https://www.google.com/maps?q=25.004495,88.137124&output=embed"
+    width="100%" 
+    height="250"
+    style="border:0; border-radius:10px;">
+  </iframe>
+
+</div>
+  <div class="footer">
+  © 2026 Pranab Paul & Dipa Paul’s Shoe Enterprise
+</div>
+  </div>
+
+
+<div id="contact" class="page">
+  <h2>Contact Page</h2>
+</div>
+
+<div id="gallery" class="page">
+  <div class="shoei">
+    <img src="https://i.postimg.cc/gcgCdY9Q/20260416-175746.jpg">
+    <h2 style="color:#f0a511;">Welcome to our store</h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/RVrfDq9v/20260418-185635.jpg">
+    <h2 style="color:#f0a511;">
+      Our collection of shoes
+    </h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/8CFzGBmN/20260418-185643.jpg">
+    <h2 style="color:#f0a511;">
+      More collection of shoes
+    </h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/FKcXGPxm/20260418-185651.jpg">
+    <h2 style="color:#f0a511;">
+      More collection of shoes
+    </h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/pTZ713h7/20260418-185659.jpg">
+    <h2 style="color:#f0a511;">
+      More collection of shoes in warehouse
+    </h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/5yyPKyMD/20260418-185706.jpg">
+    <h2 style="color:#f0a511;">
+      Our warehouse
+    </h2>
+  </div>
+  <div class="shoei">
+    <img src="https://i.postimg.cc/HWrRtvWK/20260418-185832.jpg">
+    <h2 style="color:#f0a511;">
+      Our counter
+    </h2>
+  </div>
+  <hr class="line">
+  <div class="section">
+  <h2>Our Location</h2>
+
+  <iframe 
+    src="https://www.google.com/maps?q=25.004495,88.137124&output=embed"
+    width="100%" 
+    height="250"
+    style="border:0; border-radius:10px;">
+  </iframe>
+
+</div>
+    <div class="footer">
+  © 2026 Pranab Paul & Dipa Paul’s Shoe Enterprise
+</div>
+</div>
+<div id="home" class="page">
+  
+
+    <div class="hero">
+      <h3><marquee behavior="scroll" direction="left">
+        Welcome To Pranab Paul & Dipa Paul's shoe Enterprise
+        </marquee></h3>
+      
+    </div>
+    <div class="secii">
+      <h3>Simple Design. Everyday Comfort.</h3>
+      <img src="https://i.postimg.cc/XJkgnMcK/1000189038-removebg-preview.png">
+    </div>
+    <hr>
+    <div style="text-align:center;color:red;" class="owner">
+  <h1>About our owner</h1>
+  <p>
+  Owned by Dipa Paul & Pranab Paul • Serving Malda customers with trust ❤️
+</p>
+</div>
+<hr>
+    
+    <div class="shoei">
+      
+      <img src="https://i.postimg.cc/JnCW9XPx/Screenshot-20260415-133932-Chat-GPT(1).jpg">
+      
+      <h2>Mens collection</h2>
+      <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    </div>
+    
+    <div class="shoeii">
+      
+      <img src="https://i.postimg.cc/mZMSLHVS/Screenshot-20260415-133514-Chat-GPT(1).jpg">
+      
+      <h2>Womans collection</h2>
+      <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    </div>
+    <div class="shoeiii">
+      
+      <img src="https://i.postimg.cc/Pf4Qvjsr/Screenshot-20260415-133514-Chat-GPT(2).jpg">
+      
+      <h2>Sports collection</h2>
+      <a class="btn" href="https://wa.me/+917908348417?text=I%20want%20to%20order">Order Now</a>
+    </div>
+    
+    <div style="text-align:center;" class="about">
+  <h3>About Us</h3>
+  <p>We provide stylish and comfortable footwear at affordable prices in Malda. We are wholesaler and order supplier of all kinds of Footware</p>
+  <p style="color:red;">✔ Affordable Prices</p>
+<p style="color:orange;">✔ Wide Variety Available</p>
+<p style="color:green;">✔ Visit Store for Best Offers</p>
+</div>
+<hr>
+<div class="section">
+  <h2>Our Location</h2>
+
+  <iframe 
+    src="https://www.google.com/maps?q=25.004495,88.137124&output=embed"
+    width="100%" 
+    height="250"
+    style="border:0; border-radius:10px;">
+  </iframe>
+
+</div>
+
+
+    <div class="footer">
+  © 2026 Pranab Paul & Dipa Paul’s Shoe Enterprise
+</div>
+    <a href="https://wa.me/+917908348417" class="whatsapp">💬</a>
+    <a href="tel:+917908348417" class="call">📞</a>
+    </div>
+  </body>
+</html>
